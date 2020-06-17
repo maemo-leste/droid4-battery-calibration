@@ -1,0 +1,11 @@
+Source: dorid4-battery-calibration
+Section: droid4
+Priority: extra
+Maintainer: uvos <devnull@uvos.xyz>
+Build-Depends:
+ debhelper (>= 10),
+Standards-Version: 3.9.1
+
+Package: uvos <devnull@uvos.xyz>
+Architecture: all
+Description: Init script for battery calibration on the Motorola Droid 4
