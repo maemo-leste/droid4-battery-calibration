@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rc-update del droid4-battery-calibration default
+rc-update add droid4-battery-calibration sysinit
+
+#DEBHELPER#
