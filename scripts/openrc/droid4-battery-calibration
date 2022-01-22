@@ -21,6 +21,6 @@ stop() {
 	cat /sys/class/power_supply/battery/charge_full > /var/lib/droid4-battery-calibration/charge_full
 	if [ $? -ne 0 ]; then
 		einfo "Saving charge_full failed"
-		rm -f /var/lib/maserati-battery-calibration/charge_full
+		rm -f /var/lib/droid4-battery-calibration/charge_full
 	fi
 }
