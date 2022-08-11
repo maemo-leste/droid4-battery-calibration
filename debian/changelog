@@ -1,3 +1,9 @@
+droid4-battery-calibration (1.1.1) unstable; urgency=low
+
+  * Fix minor issue with path the renaming to droid4 not being executed compleatly
+
+ -- uvos <devnull@uvos.xyz>  Thu, 11 Aug 12:36:56 2022 11:58:07 +0100
+
 droid4-battery-calibration (1.1.0) unstable; urgency=medium
 
   * Install the initscript in the sysinit runlevel.
