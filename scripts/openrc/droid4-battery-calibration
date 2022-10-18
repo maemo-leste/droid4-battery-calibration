@@ -7,20 +7,11 @@ depend() {
 }
 
 start() {
-	if [ -f /var/lib/droid4-battery-calibration/charge_full ]; then
-		ebegin "Restoring charge_full"
-		cat /var/lib/droid4-battery-calibration/charge_full > /sys/class/power_supply/battery/charge_full
-	else
-		einfo "No charge_full file to restore"
-	fi
+	cat /var/lib/droid4-battery-calibration/charge_full > /sys/class/power_supply/battery/charge_full || true
 }
 
 stop() {
 	ebegin "Saving charge_full"
 	mkdir -p /var/lib/droid4-battery-calibration
-	cat /sys/class/power_supply/battery/charge_full > /var/lib/droid4-battery-calibration/charge_full
-	if [ $? -ne 0 ]; then
-		einfo "Saving charge_full failed"
-		rm -f /var/lib/droid4-battery-calibration/charge_full
-	fi
+	cat /sys/class/power_supply/battery/charge_full > /var/lib/droid4-battery-calibration/charge_full || true
 }
