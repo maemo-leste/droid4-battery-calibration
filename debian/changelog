@@ -1,8 +1,14 @@
+droid4-battery-calibration (1.1.2) unstable; urgency=low
+
+  * dont exit if saveing or restoreing failes
+
+ -- uvos <devnull@uvos.xyz>  Thu, 18 Oct 2022 12:36:56 2022 19:58:07 +0100
+
 droid4-battery-calibration (1.1.1) unstable; urgency=low
 
   * Fix minor issue with path the renaming to droid4 not being executed compleatly
 
- -- uvos <devnull@uvos.xyz>  Thu, 11 Aug 12:36:56 2022 11:58:07 +0100
+ -- uvos <devnull@uvos.xyz>  Thu, 11 Aug 2022 11:58:07 +0100
 
 droid4-battery-calibration (1.1.0) unstable; urgency=medium
 
